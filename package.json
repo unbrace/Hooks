@@ -1,0 +1,53 @@
+{
+  "name": "@unbrace/hooks",
+  "version": "0.0.1",
+  "description": "Frontend hooks used by Unbrace",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "lint": "eslint src/**/*.{ts,tsx,js}",
+    "lint-fix": "eslint src/**/*.{ts,tsx,js} --fix",
+    "publish-np": "npm run build && np",
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unbrace/Hooks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unbrace/hooks/issues"
+  },
+  "homepage": "https://github.com/unbrace/hooks#readme",
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@types/react": "^16.9.13",
+    "@types/react-dom": "^16.9.4",
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@typescript-eslint/parser": "^2.13.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.8.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "fork-ts-checker-webpack-plugin": "^4.0.0-beta.4",
+    "np": "^5.2.1",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "rollup": "^1.27.5",
+    "rollup-plugin-typescript2": "^0.25.2",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4"
+  },
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ]
+}
